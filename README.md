@@ -6,3 +6,4 @@ class => <br>
 - Person
 - Teacher
 - Student
+- Subject
