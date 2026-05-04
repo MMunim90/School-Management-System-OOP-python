@@ -34,12 +34,21 @@ abul = Teacher("Abul Khan")
 babul = Teacher("Babul Khan")
 kabul = Teacher("Kabul Khan")
 
+
 # Adding Subjects
 bangla = Subject("Bangla", abul)
 physics = Subject("Physics", babul)
 chemistry = Subject("Chemistry", babul)
 math = Subject("Math", kabul)
 ict = Subject("ICT", kabul)
+
+
+school.add_teacher(bangla, abul)
+school.add_teacher(physics, babul)
+school.add_teacher(chemistry, babul)
+school.add_teacher(math, kabul)
+school.add_teacher(ict, kabul)
+
 
 eight.add_subject(bangla)
 eight.add_subject(math)

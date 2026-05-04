@@ -9,7 +9,7 @@ class School:
         self.classrooms[classroom.name] = classroom
 
     def add_teacher(self, subject, teacher):
-        self.teachers[subject] = teacher
+        self.teachers[subject.name] = teacher
 
     def student_addmission(self, student):
         classname = student.classroom.name
@@ -64,6 +64,7 @@ class School:
         
     def __repr__(self):
         # All Classrooms
+        print("All Classrooms: ")
         for key in self.classrooms.keys():
             print(key)
 
@@ -77,6 +78,7 @@ class School:
         print(result)
 
         # All Subjects
+        print("All Subjects: ")
         subject = ''
         for key, value in self.classrooms.items():
             subject += f"---{key.upper()} Classrooms Subjects\n"
@@ -85,12 +87,10 @@ class School:
         print(subject)
 
         # All Teachers
+        print("All Teachers: ")
         teacher = ''
         for key, value in self.teachers.items():
-            teacher += f"---{key} Classrooms Teachers\n"
-            for tech in value.teachers:
-                teacher += f"{tech.name}\n"
-            print(teacher)
+            print(f"---{key} Subjects Teacher : {value.name}\n")
             
         # All Student Results
         print("Students Results: ")
