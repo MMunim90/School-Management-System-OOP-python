@@ -16,7 +16,7 @@ class Teacher(Person):
 class Student(Person):
     def __init__(self, name, classroom):
         super().__init__(name)
-        self.classroom = classroom
+        self.classroom = classroom # classroom object
         self.__id = None
         self.marks = {}
         self.subject_grade = {}
